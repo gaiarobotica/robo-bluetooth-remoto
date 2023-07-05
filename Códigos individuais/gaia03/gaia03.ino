@@ -25,11 +25,11 @@ void loop() {
 }
 
 void Forward() {
-  // Roda Esquerda
-  analogWrite(5, 150);
-  digitalWrite(6, LOW);
   // Roda direita
-  analogWrite(9, 180);
+  analogWrite(5, 157);
+  digitalWrite(6, LOW);
+  // Roda esquerda
+  analogWrite(9, 150);
   digitalWrite(10, LOW);
 }
 void Backward() {
