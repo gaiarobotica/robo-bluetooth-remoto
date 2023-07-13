@@ -29,7 +29,7 @@ void Forward() {
   analogWrite(5, 150);
   digitalWrite(6, LOW);
   // Roda esquerda
-  analogWrite(9, 150);
+  analogWrite(9, 153);
   digitalWrite(10, LOW);
 }
 void Backward() {
