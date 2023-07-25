@@ -1,8 +1,11 @@
+
 void setup() {
+  // Inicializa a transferência de dados com o computador, 9600 Bytes/s
   Serial.begin(9600);
 }
 
 void loop() {
+  // "Serial" são as portas Rx Tx do Arduino
   if (Serial.available() > 0) {
     char value = Serial.read();
     Serial.println(value);
@@ -22,9 +25,11 @@ void loop() {
 }
 
 void Forward() {
+  // Roda direita
   analogWrite(5, 150);
   digitalWrite(6, LOW);
-  analogWrite(9, 110);
+  // Roda esquerda
+  analogWrite(9, 150);
   digitalWrite(10, LOW);
 }
 void Backward() {
